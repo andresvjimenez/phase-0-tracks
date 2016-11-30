@@ -13,6 +13,15 @@ padding-left: 10px;
 
 }
 
+.job:hover {
+    background-color: grey;
+}
+
+ul.smaller-text:hover li {
+  color: blue;
+
+}
+
 .smaller-text {
 font-size: .8em;
 
