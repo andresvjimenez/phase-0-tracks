@@ -1,3 +1,11 @@
+
+.body {
+
+  width: 960px;
+  background-color: orange;
+  padding-left: 5px;
+}
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -7,18 +15,41 @@ blockquote {
 cite {
   display: block;
   margin-top: 10px;
+  
 }
 
-#external-links ul {
+#external-links {
   list-style-type: none;
   padding-left: 0px;
+
+    margin-top: -20px;
+    float: right;
+    width: 200px;
+    min-height: 100%;
+    display: contents; 
+    vertical-align: text-bottom;
+
 }
+
+#external-links h1 {
+    margin-left: 25px;
+
+}
+
+#main {
+
+  width: 100%;
+
+
+}
+
+
 
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
 img {
-  width: 100%;
+  width: 80%;
 }
 
 figure {
@@ -28,5 +59,35 @@ figure {
 
 figcaption {
   font-style: italic;
-  text-align: right;
+  text-align: left;
 }
+
+@media only screen and (max-width: 500px) {
+  .body {
+    background-color: hotpink;
+    padding-right: 3px;
+    
+    
+    }
+
+    .body p {
+
+      font-size: 0.5em;
+      text-align: left;
+    }
+
+     #external-links {
+      float: left;
+      margin-top: 10px;
+
+
+
+    }
+
+  
+
+  }
+
+/* 1st media query added for Release 2: Add Media Queries */
+
+
