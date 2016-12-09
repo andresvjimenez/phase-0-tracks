@@ -1,0 +1,43 @@
+Release 0: Equip Your New Robot
+
+- Wait until a button number is issued
+  - Memorize the issued button number 
+  - Go to elevator lobby
+  - Go inside elevator 
+  - Face the elevator button panel
+  - Until you read the issued button number
+    - Read upward until last elevator number on panel is reached (Panel_Wall_A).
+    - Read left along Panel_Wall_A until last elevator number on panel is reached (Panel_Wall_B).
+    - Until the entire Panel has been read (until the panel wall opposite Panel_Wall_A has been 
+      encountered and fully traversed):
+        - Read right in a straight line away from Panel_Wall_B, along Panel_Wall_A.
+        - When another corner is reached (Panel_Wall_C), read 2 inches 
+          away from (perpendicular to) Panel_Wall_A, toward the remaining 
+          unencountered wall (Panel_Wall_D).
+        - Read left in a straight line parallel to Panel_Wall_A in the opposite direction.
+        - When another corner is reached (Panel_Wall_B), read 2 inches 
+          away from (perpendicular to) Panel_Wall_A, toward the remaining 
+          unencountered wall (Panel_Wall_D).
+    - Stop, read!
+  - Select the issued button number
+- Stop, Robot!
+
+
+Release 1: Watering Plants
+
+- Wait until it is 05:00:00 
+  - Wake up
+  - Go to outside doorstep 
+  - Grab the watering can 
+  - Go inside to kitchen sink
+  - Place watering can hole under kitchen sink spout
+  - Pull sink lever up until it faces kitchen ceiling 
+  - Wait for 15 seconds
+  - Push sink lever down until it faces kitchen stove 
+  - With watering can hole facing my chin, take watering can outside to potted cactus plant 
+  - With With watering can hole facing my chin, lift watering can 6 inches above potted cactus plant
+  - Tilt watering can until watering can hole face potted cactus plant
+  - Keep water can tilted for 5 seconds
+- Stop, watering plants
+
+ 
