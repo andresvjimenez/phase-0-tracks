@@ -93,7 +93,7 @@ puts "Your decrypted password is #{result}"
 else
 puts 'wrong input try again'
 end
-=begin
 p decrypt(encrypt("swordfish"))
+=begin
 This prints the original string ("swordfish) because the letter indexes of the string are incremented by 1 (via encrypt ()) and then the letter indexes of the string are decremented by 1 (via decrypt ()) which returns the letter indexes of the string to their original value (leaving the inputted string of letters unchanged)
 =end
