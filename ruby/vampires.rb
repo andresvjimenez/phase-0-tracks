@@ -1,60 +1,73 @@
+counter = 0
+year = 2016.to_i
+
+
+
+
+
+
+
+
+
 puts "What's your name"
-name = gets.chomp
+employee_name = gets.chomp
+
 
 puts "How old are you?" 
-AGE = gets.to_i
+age = gets.to_i
+
 puts "What year were you born?"
-DOB = gets.to_i
+dob = gets.to_i
 
-
-puts "Our company cafeteria serves garlic bread. Should we order some for you? (y/n)"
-garlic = gets.chomp
-
-
-if AGE = 2016 - DOB
-  AGE = true
+if age == year - dob
+  age = true
 else
-  AGE = false
+  age = false
 end
 
+
+puts "Our company cafeteria serves garlic bread. 
+Should we order some for you? (y/n)"
+garlic = gets.chomp
 
 if garlic == "y"
   garlic = true
-else
+elsif garlic == "n"
   garlic = false
 end
 
-puts "Would you like to enroll in the company’s health insurance? (y/n)"
+
+puts "Would you like to enroll in the company’s 
+health insurance? (y/n)"
 insurance = gets.chomp
 
 if insurance == "y"
   insurance = true
-else
+elsif insurance == "n"
   insurance = false
+end
 
-case x 
+case 
 
-if AGE && (garlic || insurance) 
-  puts “Probably NOT a vampire.”  
+   
+when age && (garlic || insurance) 
+  puts "Probably NOT a vampire."  
 
+when age && (garlic || insurance) 
+  puts "Probably a vampire."
 
+when age && (garlic && insurance) 
+  puts "Almost certainly a vampire."
 
-if AGE && (garlic || insurance) 
-  puts “Probably a vampire.”
-
-
-if AGE && garlic && insurance 
-
-  puts “Almost certainly a vampire.”
-
-
-
-
-if "Drake Cula" == name or "Tu Fang" == name
+when employee_name == "Drake Cula" 
   puts "Definitely a vampire."
 
-
+when employee_name == "Tu Fang"
+  puts "Definitely a vampire."
 else
   puts "Results inconclusive."
 
+
 end
+
+
