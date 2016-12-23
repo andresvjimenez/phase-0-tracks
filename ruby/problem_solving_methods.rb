@@ -1,25 +1,127 @@
 
 
 
-  def release_0()
-  suitcase_items = []
 
+=begin
+
+  def release_0()
+  int_arr = []
   loop do
-  puts "Please enter an integer for the array then press enter or if you're done type 'done' then press enter"
+  p "Please enter an integer for the array then press enter to enter another integer or, if you're done, type 'done' then press enter"
   integers = gets.chomp!
   break if integers == "done"
-  suitcase_items << integers
-  p suitcase_items
+  int_arr << integers
+  p int_arr
+  end  
+  p "Please enter one integer you're searching for then press enter"
+  integer = gets.chomp!
+  if int_arr.include?(integer)
+  p int_arr.map.with_index {|x, i| x == integer ? i : nil}.compact
+  else
+   p nil
+    end 
+  end 
+  release_0()
+
+=end
+
+
+
+
+
+
+
+
+
+
+
+=begin
+
+def fib()
+p "Please type the number of Fibonacci numbers to be generated then press enter"
+f = gets.chomp.to_i
+fib_arr = [0,1]
+fib_arr.push(f)
+fib_arr.fill (2..f-1) { |i| fib_arr.fetch(i-1) + fib_arr.fetch(i-2)}
+p fib_arr 
+end
+fib()
+
+=begin
+
+
+
+
+
+
+
+
+
+
+=begin
+
+def b_sort()
+
+  int_arr = []
+  loop do
+  p "Please enter an integer for the array then 
+  press enter to enter another integer or, if you're done, type 'done' then press enter"
+  integers = gets.chomp!
+  break if integers == "done"
+  int_arr << integers
+  p int_arr
+  end
+  
+  n = int_arr.length
+  loop do
+  switched_int = false
+  (n-1).times do |i|
+   if int_arr[i] > int_arr[i+1]
+    int_arr[i], int_arr[i+1] = int_arr[i+1], int_arr[i]
+    switched_int = true
+   end
   end
 
+  break if !switched_int
+  end
   
-  puts "Please enter one integer you're searching for then press enter"
-  integer = gets.chomp!
-  p suitcase_items.map.with_index {|x, i| x == integer ? i : nil}.compact
+  p int_arr 
+end
+  
+  b_sort() 
 
- end 
-  
-  release_0()
+=end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
