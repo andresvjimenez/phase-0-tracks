@@ -81,8 +81,8 @@ class Toddler
 
 
 
-  def initialize(toddler_name)
-  @toddler_name = toddler_name 
+  def initialize()
+  @toddler_name = "Alex" 
 
   end
 
@@ -90,7 +90,7 @@ class Toddler
   def hair_eyes(hair_color, eye_color)
 
 
-  var2 = "Toddler #{@toddler_name} has #{hair_color} hair and #{eye_color} eyes. "
+  var2 = "#{@toddler_name} has #{hair_color} hair and #{eye_color} eyes. "
 
   end 
 
@@ -98,7 +98,7 @@ class Toddler
 
   def shake_hand(user_name)
 
-  var3 = "Toddler #{@toddler_name} shakes #{user_name}'s hand. "
+  var3 = "#{@toddler_name} shakes #{user_name}'s hand. "
 
   end
 
@@ -110,13 +110,23 @@ end
   instances = []
   index = 0
   while index < 50
-  todd = Toddler.new('Alex')
-  instances << todd.hair_eyes('brown', 'brown') 
-  instances << todd.shake_hand('Sarah')
+  todd = Toddler.new
+  instances << todd.hair_eyes('brown', 'brown')+todd.shake_hand('Sarah')
   index += 1
   end
 
-  p instances
+
+  instances.each do |toddler|
+
+  p todd.hair_eyes('red', 'blue')+todd.shake_hand('Abram')
+
+  end
+
+
+  p instances.length
+
+
+
 
 
 
