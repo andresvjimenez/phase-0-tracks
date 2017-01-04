@@ -2,50 +2,65 @@
 class Wordgame
 
 
-def word_creator
+def word_creator()
+
+end 
+
+def chances_left()
+end
+
+def endgame()
+end
+
+end
+
 
 p "Word creator please choose a word for everyone to guess"
 user_one_word = gets.chomp
 
-end 
 
-def chances_left
 
 p "Guesser please make a guess"
 user_two_guess = gets.chomp
 
-end
-
-def 
 
 index = 0
-while index < user_two_guess.length
+while index < user_one_word.length
   if user_two_guess != user_one_word
     p "Guess again"
+
+ 
+elsif user_two_guess == user_one_word
+ p "Hooray, you won!"
+ break
+end
+
+
 index += 1 
 
 end
 
-def endgame
-
-
-if index >= user_one_word.length
-  p "Haha, you lose!"
-elsif user_two_guess == user_one_word
-  p "Hooray, you won!"
-
+if index == user_one_word.length
+p "Haha, you lose!"
 end
 
 
-end
-end
 
 
-wordame = Wordgame.new
-wordgame.word_creator 
-wordgame.word_guesser
-wordgame.chances_left
-wordgame.endgame
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 =begin
@@ -64,9 +79,8 @@ user loses, then they get "Haha, you lose!".
 
 =end
 
-end
 
-end
+
 
 
 
